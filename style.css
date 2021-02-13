@@ -29,16 +29,24 @@ div,section{
     padding: 0 5%;
     font-size: .6rem;
 }
+.content--title{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5vh;
+}
 header{
     position: fixed;
+    right: 0;
+    left: 0;
     width: 100%;
-    height: 5vh;
     /* background:rgb(85, 85, 85); */
     border-bottom: 1px solid black;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    /* align-content: center; */
     padding: 0 5%;
+    flex-direction: column;
 }
 #header-img{
     width: 25px;
@@ -46,6 +54,7 @@ header{
 }
 .nav-bar--container{
     width: 100%;
+    height: 5vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -56,11 +65,6 @@ header{
 }
 .nav-bar--ul--sm{
     display: none;
-}
-.nav-bar--ul--sm:open{
-    display: flex;
-    width: auto;
-    flex-direction: column;
 }
 .nav-bar--ul--li{
     margin: 0 10px;
@@ -82,9 +86,32 @@ header{
   width: 25px;
   height: 3px;
 }
-.nav--bar--hamburger.clicked{
+/* .nav--bar--hamburger{
     
+} */
+
+
+.nav-bar--ul--sm.show{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+.nav-bar--ul--sm .nav-link{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.nav-bar--ul--li{
+    margin: 10px 0;
+}
+header.show{
+    height: auto;
+    background-color: rgb(196, 196, 196);
+}
+
+/* product start here */
 .product--intro--title{
     text-align: center;
     font-size: 2rem;
@@ -181,6 +208,7 @@ header{
 .contact-form--image{
     width: 200px;
     height: auto;
+    margin:5px 0;
 }
 .contact-form__form{
     display: flex;
@@ -189,11 +217,11 @@ header{
     width: 300px;
     padding: 0 10px;
 }
-input[type="email"],input[type="text"]{
+input[type="email"],input[type="text"],textarea{
     width: 100%;
     padding: 5px;
     align-items: center;
-    color: #ffffff;
+    color: #000000;
     background:rgb(236, 236, 236);
     border-radius: 10px;
     margin: 15px 0;
@@ -201,6 +229,9 @@ input[type="email"],input[type="text"]{
 input[type="submit"]{
     padding:5px 15px;
     border-radius: 10px;
+}
+textarea{
+    height: 20vh;
 }
 #submit{
     display: flex;
@@ -224,7 +255,12 @@ input[type="submit"]{
     .nav-bar--ul--lg{
         display: flex;
     }
-
+    .nav-bar--ul--lg .nav-bar--ul--li{
+        margin-left: 25px;
+    }
+    .nav-bar--ul--lg .nav-bar--ul--li .nav-link{
+    font-size: 1rem;
+    }
 }
 
 @media screen and (min-width: 600px){  

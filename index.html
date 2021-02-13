@@ -12,9 +12,9 @@
         <nav id="nav-bar" class="nav-bar--container">
             <img src='images/flogo.svg' alt="" id="header-img">
             <ul class="nav-bar--ul--lg">
-                <li class="nav-bar--ul--li"><a id="nav-link" href="#home">home</a></li>
-                <li class="nav-bar--ul--li"><a id="nav-link" href="#product">product</a></li>
-                <li class="nav-bar--ul--li"><a id="nav-link" href="#contact">contact</a></li>
+                <li  class="nav-bar--ul--li"><a class="nav-link" href="#home">home</a></li>
+                <li  class="nav-bar--ul--li"><a class="nav-link" href="#product">product</a></li>
+                <li  class="nav-bar--ul--li"><a class="nav-link" href="#contact">contact</a></li>
             </ul>
 
             <ul class="nav--bar--hamburger">
@@ -22,16 +22,19 @@
                 <li class="nav--bar--hamburger--line"></li>
                 <li class="nav--bar--hamburger--line"></li>
             </ul>
+            
         </nav>
+
         <ul class="nav-bar--ul--sm">
-            <li class="nav-bar--ul--li"><a id="nav-link" href="#home">home</a></li>
-            <li class="nav-bar--ul--li"><a id="nav-link" href="#product">product</a></li>
-            <li class="nav-bar--ul--li"><a id="nav-link" href="#contact">contact</a></li>
+            <li class="nav-bar--ul--li"><a class="nav-link" href="#home">home</a></li>
+            <li class="nav-bar--ul--li"><a class="nav-link" href="#product">product</a></li>
+            <li class="nav-bar--ul--li"><a class="nav-link" href="#contact">contact</a></li>
         </ul>
     </header>
+
+    
     <h1 class="product--intro--title">beeper</h1>
-    <div class="product--intro--container">
-        <!-- <h1 class="product--intro--title">Pager</h1> -->
+    <div id="home"  class="product--intro--container">
         <div class="product--video--container screen--container">
             <iframe id="video" src="https://www.youtube.com/embed/jrUVYTqvIfI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -47,7 +50,9 @@
             </p>
         </div>
     </div>
-    <div class="product--card--container">
+    
+    <h1 class="content--title">Available Items</h1>
+    <div id="product" class="product--card--container">
         <div class="product--card--item">
             <img src='images/9100-pager-600x491.png' alt="" srcset="" class="product--card--image">
             <div class="product--card--details">
@@ -103,16 +108,18 @@
         </div>
     </div>
 
-    <div class="contact-form--container screen--container">
+    <div id="contact" class="contact-form--container screen--container">
+        <h1 class="content--title">Email me</h1>
         <img src='images/flamenco-message-sent.png' alt="" srcset="" class="contact-form--image">
-
-        <form action="" id="form" class="contact-form__form">
-            <input type="email" name="" id="email" placeholder="email@xyz.com" required>
-            <div type="submit" value="" id="submit">Submit</div>
+            <form action="" id="form" class="contact-form__form">            
+            <input type="email" name="email" id="email" placeholder="email@xyz.com" required>
+            <textarea class="message" placeholder="Message"></textarea>
+            <input type="submit" value="Submit" id="submit"></input>
         </form>
     </div>
 
 </body>
+<script src="apps.js"></script>
 </html>
 
 
