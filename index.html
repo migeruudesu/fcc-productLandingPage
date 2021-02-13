@@ -9,12 +9,12 @@
 </head>
 <body>
     <header id="header">
-        <img src='images/Logo.svg' alt="" id="header-img">
         <nav id="nav-bar" class="nav-bar--container">
+            <img src='images/flogo.svg' alt="" id="header-img">
             <ul class="nav-bar--ul--lg">
                 <li class="nav-bar--ul--li"><a id="nav-link" href="#home">home</a></li>
                 <li class="nav-bar--ul--li"><a id="nav-link" href="#product">product</a></li>
-                <li class="nav-bar--ul--li"><a id="nav-link" href="#footer">footer</a></li>
+                <li class="nav-bar--ul--li"><a id="nav-link" href="#contact">contact</a></li>
             </ul>
 
             <ul class="nav--bar--hamburger">
@@ -26,22 +26,23 @@
         <ul class="nav-bar--ul--sm">
             <li class="nav-bar--ul--li"><a id="nav-link" href="#home">home</a></li>
             <li class="nav-bar--ul--li"><a id="nav-link" href="#product">product</a></li>
-            <li class="nav-bar--ul--li"><a id="nav-link" href="#footer">footer</a></li>
+            <li class="nav-bar--ul--li"><a id="nav-link" href="#contact">contact</a></li>
         </ul>
     </header>
+    <h1 class="product--intro--title">beeper</h1>
     <div class="product--intro--container">
         <!-- <h1 class="product--intro--title">Pager</h1> -->
         <div class="product--video--container screen--container">
             <iframe id="video" src="https://www.youtube.com/embed/jrUVYTqvIfI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <div class="product--caption--container screen--container">
-            <p class="product--caption__p product--p">
+        <div class="product--caption--container">
+            <p class="product--caption__p">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam reiciendis facilis ad quas labore! Tenetur modi, asperiores rem pariatur omnis qui fugiat suscipit quos molestiae aut repellendus nihil, odit dicta voluptate at iusto ducimus adipisci explicabo nemo velit ut sed nam quam harum? Alias ipsa nobis cumque ut, veniam saepe.
             </p>
-            <p class="product--caption__p product--p">
+            <p class="product--caption__p">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum expedita ea laboriosam iste praesentium beatae eum commodi autem rem doloremque, dolorum culpa corporis laborum quam?
             </p>
-            <p class="product--caption__p product--p">
+            <p class="product--caption__p">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptas dolorum recusandae sint consequuntur eaque? Optio eaque facere reiciendis, aliquam quod et accusantium iusto eius eveniet numquam adipisci maiores alias esse praesentium quia! Deserunt, molestiae.
             </p>
         </div>
@@ -102,10 +103,15 @@
         </div>
     </div>
 
-    <form action="" id="form" class="screen--container">
-        <input type="email" name="" id="email" placeholder="email@xyz.com" required>
-        <input type="submit" value="" id="submit">
-    </form>
+    <div class="contact-form--container screen--container">
+        <img src='images/flamenco-message-sent.png' alt="" srcset="" class="contact-form--image">
+
+        <form action="" id="form" class="contact-form__form">
+            <input type="email" name="" id="email" placeholder="email@xyz.com" required>
+            <div type="submit" value="" id="submit">Submit</div>
+        </form>
+    </div>
+
 </body>
 </html>
 
