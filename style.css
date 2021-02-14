@@ -39,7 +39,7 @@ header{
     right: 0;
     left: 0;
     width: 100%;
-    /* background:rgb(85, 85, 85); */
+    background-color:rgb(196, 196, 196);
     border-bottom: 1px solid black;
     display: flex;
     flex-direction: row;
@@ -47,6 +47,7 @@ header{
     align-items: center;
     padding: 0 5%;
     flex-direction: column;
+    
 }
 #header-img{
     width: 25px;
@@ -110,7 +111,9 @@ header.show{
     height: auto;
     background-color: rgb(196, 196, 196);
 }
-
+.color{
+    background-color: rgb(196, 196, 196);
+}
 /* product start here */
 .product--intro--title{
     text-align: center;
@@ -245,6 +248,9 @@ textarea{
     border-radius: 15px;
 }
 @media screen and (min-width: 400px){
+    header{
+        background-color:transparent;
+    }
     iframe{
         width: 320px;
         height: 240px;
